@@ -1,6 +1,9 @@
 package com.rohit.project.storage.impl;
 
+import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+
+import com.rohit.project.storage.interfaces.DBStorage;
 
 public class SimpleDBStorage<K,V> implements DBStorage<K, V>{
     private final Map<K, V> database;
