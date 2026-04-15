@@ -8,7 +8,7 @@ import com.rohit.project.storage.interfaces.DBStorage;
 public class SimpleDBStorage<K,V> implements DBStorage<K, V>{
     private final Map<K, V> database;
 
-    SimpleDBStorage() {
+    public SimpleDBStorage() {
         this.database = new ConcurrentHashMap<>();    
     }
 
